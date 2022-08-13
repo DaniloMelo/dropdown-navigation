@@ -1,0 +1,30 @@
+:root{
+--almostWhite: hsl(0, 0%, 98%);
+--mediumGray: hsl(0, 0%, 41%);
+--almostBlack: hsl(0, 0%, 8%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.attribution{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: .5em;
+    width: 100%;
+}
+
+body{
+    font-family: 'Epilogue', sans-serif;  
+}
+
+a{
+    color: black;
+}

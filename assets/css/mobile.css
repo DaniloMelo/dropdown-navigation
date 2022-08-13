@@ -1,0 +1,181 @@
+.menu > .menu__list,
+.menu > .menu__login{
+    display: block;
+}
+
+
+
+
+
+/* Estilo do body na versão mobile */
+.wraper figure{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin: 1.5em  .7em 1.5em 1em
+}
+
+.open-side-menu{
+    margin-right: 5%;
+}
+
+.content__img{
+    width: 100%;
+}
+
+.content__wraper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.content__title{
+    font-size: 2.3em;
+    text-align: center;
+    margin: .5em 0 .3em 0;
+}
+
+.content__parag{
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 1.3em;
+    line-height: 23px;
+}
+
+.content__btn{
+    background: #000;
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: .7em;
+    width: 35%;
+    height: 40px;
+    margin-bottom: 3em;
+}
+
+.content__clients{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.content__clients img{
+    width: 70px;
+}
+
+.content__clients img:nth-child(2){
+    width: 50px;
+}
+
+
+/* Menu lateral mobile */
+.menu{
+    background: white;
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    top: 0;
+    /* right: -100%; */
+    width: 65%;  
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.close-side-menu{
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+
+.menu__list{
+    position: relative;
+    top: 80px;
+    left: 1.5em;
+    width: 100%;
+    line-height: 50px;
+}
+
+.menu__list  ul{
+    padding-left: 25px;
+    line-height: 30px;
+    top: 10px;
+    /* opacity: 0; */
+    display: none;
+}
+
+.menu__login{
+    position: absolute;
+    top: 78vh;  
+    width: 100%;  
+}
+
+.menu__login-btn-login,
+.menu__login-btn-register{
+    background: white;
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    height: 35px;
+    border-radius: .7em;
+    border: 1px solid black;
+}
+
+.menu__login-btn-login{
+    margin-bottom: 10px;
+    border: none;
+}
+
+.tranparent-bg{
+    background: rgba(0, 0, 0, 50%);
+}
+.active-side-menu .menu{
+    right: 0;
+    transition: right .3s 0s cubic-bezier(.36,.35,0,.99);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu{
+    /* display: none; */
+}

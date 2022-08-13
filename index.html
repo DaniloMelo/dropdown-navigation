@@ -13,6 +13,10 @@
   <link rel="stylesheet" href="assets/css/mobile.css">
   <link rel="stylesheet" href="assets/css/desktop.css">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap" rel="stylesheet">
+
   <style>
     .attribution {
       font-size: 11px;
@@ -26,22 +30,25 @@
 </head>
 
 <body>
-
   <header>
     <div class="wraper">
-      <nav>
-        <img src="assets/images/logo.svg" alt="Snap Logo">
-        <ul>
-          <li><a href="">Features</a>
-            <ul>
-              <li><a href="">Todo List</a></li>
-              <li><a href="">Calendar</a></li>
-              <li><a href="">Reminders</a></li>
-              <li><a href="">Planning</a></li>
+      <figure>
+        <img src="assets/images/logo.svg" alt="Snap Logo" class="logo">
+        <img src="assets/images/icon-menu.svg" alt="" class="open-side-menu">
+      </figure>
+      <nav class="menu">
+        <img src="assets/images/icon-close-menu.svg" alt="" class="close-side-menu">
+        <ul class="menu__list">
+          <li class="menu__features"><a href="">Features <img src="assets/images/icon-arrow-down.svg" alt=""></a>
+            <ul class="menu__features-dropDown">
+              <li><a href=""><img src="assets/images/icon-todo.svg" alt=""> Todo List</a></li>
+              <li><a href=""><img src="assets/images/icon-calendar.svg" alt=""> Calendar</a></li>
+              <li><a href=""><img src="assets/images/icon-reminders.svg" alt=""> Reminders</a></li>
+              <li><a href=""><img src="assets/images/icon-planning.svg" alt=""> Planning</a></li>
             </ul>
           </li>
-          <li><a href="">Company</a>
-            <ul>
+          <li class="menu__company"><a href="">Company <img src="assets/images/icon-arrow-down.svg" alt=""></a>
+            <ul class="menu__company-dropDown">
               <li><a href="">History</a></li>
               <li><a href="">Our Team</a></li>
               <li><a href="">Blog</a></li>
@@ -50,30 +57,36 @@
           <li><a href="">Careers</a></li>
           <li><a href="">About</a></li>
         </ul>
+        <section class="menu__login">
+          <button class="menu__login-btn-login">Login</button>
+          <button class="menu__login-btn-register">Register</button>
+        </section>
       </nav>
-
-      <section class="login">
-        <button>Login</button>
-        <button>Register</button>
-      </section>
     </div>
   </header>
 
   <main>
     <div class="wraper">
-      <figure>
-        <img src="assets/images/image-hero-mobile.png" alt="">
-        <img src="assets/images/image-hero-desktop.png" alt="">
-      </figure>
-
-      <div>
-        <h1>Make remote work</h1>
-        <p>
-          Get your team in sync, no matter your location. Streamline processes,
-          create team rituals, and watch productivity soar.
-        </p>
-        <button>Learn more</button>
-      </div>
+      <section class="content">
+        <figure>
+          <img src="assets/images/image-hero-mobile.png" class="content__img">
+          <!-- <img src="assets/images/image-hero-desktop.png" alt=""> -->
+        </figure>
+        <div class="content__wraper">
+          <h1 class="content__title">Make remote work</h1>
+          <p class="content__parag">
+            Get your team in sync, no matter your location. Streamline processes,
+            create team rituals, and watch productivity soar.
+          </p>
+          <button class="content__btn">Learn more</button>
+          <figure class="content__clients">
+            <img src="assets/images/client-databiz.svg" alt="">
+            <img src="assets/images/client-audiophile.svg" alt="">
+            <img src="assets/images/client-meet.svg" alt="">
+            <img src="assets/images/client-maker.svg" alt="">
+          </figure>
+        </div>
+      </section>
     </div>
   </main>
 
