@@ -22,9 +22,14 @@
     margin-right: 5%;
 }
 
-.content__img{
+.content__img-mobile{
     width: 100%;
 }
+
+.content__img-desktop{
+    display: none;
+}
+
 
 .content__wraper{
     display: flex;
@@ -110,7 +115,6 @@
     line-height: 30px;
     top: 10px;
     /* opacity: 0; */
-    display: none;
 }
 
 .menu__login{
@@ -141,41 +145,4 @@
 .active-side-menu .menu{
     right: 0;
     transition: right .3s 0s cubic-bezier(.36,.35,0,.99);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.menu{
-    /* display: none; */
 }
